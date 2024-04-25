@@ -1,0 +1,4 @@
+.verify-otp-page .h-full{
+    height: calc(100vh - 1rem);
+    overflow: hidden;
+}

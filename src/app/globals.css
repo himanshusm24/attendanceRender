@@ -1,0 +1,507 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --secondary-color: #454545;
+  --primary-color: #19838a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #f3f3f3;
+  font-size: 14px;
+  min-height: 100vh;
+}
+.footer-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.btn {
+  padding: 15px 20px;
+  height: auto;
+  border-radius: 5px;
+}
+.btn-sm {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+.web-btn,
+.web-btn:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+.company-heading {
+  order: 2;
+}
+.card-body {
+  width: 100%;
+  overflow: auto;
+}
+.react-confirm-alert-body > h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.react-confirm-alert-body {
+  font-size: 1rem;
+  text-align: center !important;
+}
+.react-confirm-alert-button-group {
+  justify-content: center !important;
+}
+.react-confirm-alert-button-group > button {
+  width: 40%;
+  height: 40px;
+}
+.web-box {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.web-box .box-heading {
+  padding: 15px 20px;
+  background-color: #c0c0c0;
+}
+.web-box .box-heading .heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.web-box .box-body {
+  padding: 20px;
+}
+.web-bg {
+  background-color: var(--primary-color);
+}
+.table tr th {
+  font-weight: 600;
+}
+.table tr th,
+.table tr td {
+  color: black;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.table tr.web-bg th {
+  color: white;
+  border-color: var(--primary-color) !important;
+}
+.table-bordered tr th,
+.table-bordered tr td {
+  border: 1px solid #ddd;
+}
+.table.table-hoverable tr:hover td {
+  background-color: #f2f2f263;
+}
+.table .table tr th,
+.table .table tr td {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.table .table tr td {
+  background-color: white !important;
+}
+.badge {
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.badge.bg-success,
+.badge.bg-info,
+.badge.bg-primary {
+  color: white;
+}
+.badge.bg-danger {
+  background-color: #dc3545;
+  color: white;
+}
+.bg-white {
+  background-color: white !important;
+}
+.page-heading {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.web-wrapper {
+  width: 100%;
+}
+.web-modal .heading {
+  margin-bottom: 20px;
+}
+.web-modal .heading .close-btn {
+  padding: 0px;
+  font-size: 20px;
+  line-height: 0;
+  height: auto;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px !important;
+  min-height: 30px;
+  border-radius: 50px;
+}
+.web-modal .join input {
+  width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .web-wrapper {
+    padding: 0px 15px;
+  }
+}
+/* Common Css End */
+
+/* Project Listing Work Start */
+.project-listing {
+  padding-bottom: 30px;
+}
+.project-listing .box-heading {
+  padding: 10px 20px;
+}
+.project-listing .box-heading .input {
+  height: 40px;
+  width: 70%;
+}
+.project-listing .box-heading .btn {
+  height: 40px;
+  padding: 0px 20px;
+  min-height: 40px;
+}
+.project-listing .table {
+  background-color: white;
+}
+.project-listing a {
+  color: #0c66e4;
+}
+.project-listing a:hover {
+  text-decoration: underline;
+}
+.project-listing .project-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 600;
+}
+.project-listing .table tr td {
+  background-color: #eee;
+}
+.project-listing .table tr td {
+  position: relative;
+}
+.project-listing .table .table-arrow {
+  width: 82px;
+  height: auto;
+  position: absolute;
+  right: -10px;
+  top: -30px;
+  z-index: 1;
+}
+.project-listing .table .table {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* Project Listing Work End */
+
+/* Project Details Work Start */
+.project-details {
+  padding-bottom: 30px;
+}
+.project-details p {
+  color: grey;
+}
+.project-details .sub-heading {
+  font-weight: 600;
+  margin: 0px;
+  font-size: 14px;
+}
+.project-details .right-side hr {
+  margin: 10px 0px;
+  border-color: #ddd;
+}
+.project-details .right-side p {
+  color: black;
+}
+.project-details .team-section .team-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.project-details .team-section .team-name img {
+  background-color: #eee;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 767px) {
+  .project-details .team-section .team-name {
+    padding-right: 25px;
+  }
+}
+/* Project Details Work End */
+
+.btn-xs {
+  padding: 5px;
+  color: white;
+}
+
+.dropdown-menus {
+  padding: 0px;
+}
+.dropdown-menus .dropdown-item {
+  position: relative;
+  width: 100%;
+}
+.dropdown-menus > .dropdown-item > details {
+  width: 100%;
+}
+.dropdown-menus > .dropdown-item > details > summary {
+  padding: 10px 57px 10px 15px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  gap: 10px;
+  font-size: 14px;
+}
+.dropdown-menus > .dropdown-item > details ul li summary {
+  margin-bottom: 10px;
+}
+.menu :where(li ul):before {
+  display: none;
+}
+.dropdown-menus > .dropdown-item > details > summary:before {
+  content: "";
+  position: absolute;
+  right: 45px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.dropdown-menus > .dropdown-item > details:hover > summary {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menus > .dropdown-item > details[open] > summary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.dropdown-menus > .dropdown-item.active > details > summary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.dropdown-menus > .dropdown-item > details[open] + .plus-dropdown summary {
+  color: white;
+}
+
+.dropdown-menus .dropdown-item details summary svg {
+  font-size: 14px;
+}
+.plus-dropdown {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  padding: 0;
+}
+.plus-dropdown summary {
+  padding: 0px !important;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px !important;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.plus-dropdown:hover summary {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.plus-dropdown:focus-within summary {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+.dropdown-menus
+  > .dropdown-item
+  > details[open]
+  + .plus-dropdown:focus-within
+  summary {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.plus-dropdown summary:before {
+  display: none;
+}
+.plus-dropdown summary svg {
+  width: 16px;
+  height: 16px;
+}
+.plus-dropdown summary:after {
+  display: none;
+}
+.plus-dropdown .dropdown-content {
+  background-color: white;
+  border: 1px solid #bcbcbc;
+  min-width: 200px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  top: 45px;
+  right: -35%;
+  padding: 10px 0px;
+}
+.plus-dropdown .dropdown-content li button {
+  color: black;
+  border-radius: 0px;
+  padding: 8px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.plus-dropdown .dropdown-content li:last-child button {
+  border: none;
+}
+.plus-dropdown .dropdown-content li button svg {
+  font-size: 14px;
+}
+.plus-dropdown .dropdown-content li button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.admin-sidebar {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.admin-sidebar .logo {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.admin-sidebar label {
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: block;
+}
+.admin-sidebar nav .nav-item {
+  padding: 10px 15px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  font-size: 14px;
+}
+.admin-sidebar nav .nav-item.active {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+.admin-sidebar nav .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.admin-sidebar nav .nav-item svg {
+  width: 14px;
+  height: 14px;
+}
+.sidebar-main-btns {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.sidebar-main-btns:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.sidebar-main-btns svg {
+  width: 14px;
+  height: 14px;
+}
+.btn-error {
+  color: white;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.menu :where(li > details > summary):after,
+.menu :where(li > .menu-dropdown-toggle):after {
+  top: 20px;
+  position: absolute;
+}
+.menu :where(li > details[open] > summary):after,
+.menu :where(li > .menu-dropdown-toggle.menu-dropdown-show):after {
+  top: 16px;
+}
+
+
+.visit-table tr th {
+  white-space: nowrap;
+  color: var(--primary-color);
+}
+.visit-table tr th, .visit-table tr td{
+  padding: 5px 10px;
+}
+.visit-table .location-text {
+  overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   font-size: 10px;
+   line-height: 14px;
+}
+.visit-table .title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.visit-table img {
+  width: 50px;
+  height: 40px;
+  object-position: cover;
+  background-color: #eee;
+  border-radius: 5px;
+  font-size: 0px;
+}
+
+.page-loader {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 68px);
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .task-card {
+
+} */
+
+.task-searchbar {
+  position: fixed;
+  top: 12px;
+  left: 40px;
+}
+
+.task-searchbar input {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 15px;
+}

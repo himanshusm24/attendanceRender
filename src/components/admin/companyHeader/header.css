@@ -1,0 +1,25 @@
+.admin-header{
+    position: absolute;
+    top: 0;
+    left: 17%;
+    width: 83%;
+}
+
+.main-wrapper .rightside {
+    padding: 20px;
+    padding-left: 276px;
+}
+
+@media(max-width:767px){
+    .admin-header{
+        left: 0;
+        width: 100%;
+    }
+    
+    .main-wrapper .rightside {
+        padding: 0;
+        padding-left: 0;
+    }
+}
+
+
