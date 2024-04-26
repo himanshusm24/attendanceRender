@@ -1,0 +1,10 @@
+.home-page-data{
+    height: auto;
+    padding-bottom: 65px;
+    overflow: auto;
+}
+
+.MuiAvatar-circular{
+    width: 90px !important;
+    height: 90px !important;
+}

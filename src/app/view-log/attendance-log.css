@@ -1,0 +1,43 @@
+.attendance-log .user-img{
+    max-width: 150px;
+    height: auto !important;
+}
+
+.card{
+    padding: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* .card figure{
+    width: 200px !important;
+} */
+
+.card figure img{
+    height: 100% !important;
+    max-height: 350px;
+}
+
+.card .card-title{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-body{
+    padding: 20px !important;
+}
+
+/* .card-body p{
+   font-size: 16px !important;
+} */
+
+.no-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.no-content .back-to-home{
+    margin-top: 40px;
+    text-align: center;
+}
